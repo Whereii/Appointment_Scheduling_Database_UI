@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="781.0" prefWidth="792.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Customer_Reports_Controller">
+    <children>
+        <RadioButton fx:id="contact" layoutX="38.0" layoutY="68.0" mnemonicParsing="false" onAction="#click_contacts" selected="true" text=" Contact Scheduel">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <toggleGroup>
+                <ToggleGroup fx:id="group" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="customers_type" layoutX="225.0" layoutY="68.0" mnemonicParsing="false" onAction="#click_by_type" selected="true" text="Customers by Type" toggleGroup="$group">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </RadioButton>
+        <RadioButton fx:id="month" layoutX="423.0" layoutY="68.0" mnemonicParsing="false" onAction="#click_month" text="Customers by Month" toggleGroup="$group">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </RadioButton>
+        <Label fx:id="choice_label" layoutX="38.0" layoutY="137.0" text="Type">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="choice" layoutX="181.0" layoutY="138.0" prefHeight="25.0" prefWidth="184.0" />
+        <TableView fx:id="customer_table" layoutY="182.0" prefHeight="533.0" prefWidth="897.0">
+            <columns>
+                <TableColumn fx:id="customer_id" prefWidth="109.0" text="Customer ID" />
+                <TableColumn fx:id="customer_name" prefWidth="99.0" text="Customer Name" />
+                <TableColumn fx:id="address" prefWidth="70.0" text="Address" />
+                <TableColumn fx:id="postal_code" prefWidth="71.0" text="Postal Code" />
+                <TableColumn fx:id="phone_number" prefWidth="105.0" text="Phone Number" />
+                <TableColumn fx:id="created_date" prefWidth="92.0" text="Created Date" />
+                <TableColumn fx:id="created_by" prefWidth="82.0" text="Created By" />
+                <TableColumn fx:id="last_update" prefWidth="83.0" text="Last Update" />
+                <TableColumn fx:id="last_updated_by" prefWidth="107.0" text="Last Updated By" />
+            <TableColumn fx:id="division_id" prefWidth="75.0" text="Division ID" />
+            </columns>
+        </TableView>
+        <Button fx:id="cancel" layoutX="38.0" layoutY="733.0" mnemonicParsing="false" onAction="#click_cancel" prefHeight="37.0" prefWidth="127.0" text="Cancel">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+      <RadioButton fx:id="location" layoutX="634.0" layoutY="68.0" mnemonicParsing="false" onAction="#click_by_location" text="Customers by Location" toggleGroup="$group">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+    </children>
+</AnchorPane>

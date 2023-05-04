@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="702.0" prefWidth="949.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Modify_Appointments_Controller">
+    <children>
+        <Label layoutX="109.0" layoutY="141.0" text="Appointment ID">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="113.0" layoutY="186.0" text="Title">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="111.0" layoutY="228.0" text="Description">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="105.0" layoutY="271.0" text="Location">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="110.0" layoutY="312.0" text="Type">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="107.0" layoutY="357.0" text="Contact ID">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="106.0" layoutY="398.0" text="Customer ID">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="110.0" layoutY="447.0" text="User ID">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="109.0" layoutY="493.0" text="Start Date">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="109.0" layoutY="539.0" text="Start Time">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="535.0" layoutY="493.0" text="End Date">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="535.0" layoutY="539.0" text="End Time">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="id" disable="true" layoutX="273.0" layoutY="142.0" />
+        <TextField fx:id="title" layoutX="273.0" layoutY="187.0" />
+        <TextField fx:id="description" layoutX="273.0" layoutY="229.0" />
+        <TextField fx:id="location" layoutX="273.0" layoutY="272.0" />
+        <TextField fx:id="type" layoutX="273.0" layoutY="313.0" />
+        <ChoiceBox fx:id="user_id" layoutX="273.0" layoutY="448.0" prefWidth="150.0" />
+        <ChoiceBox fx:id="customer_id" layoutX="273.0" layoutY="399.0" prefWidth="150.0" />
+        <ChoiceBox fx:id="contact_id" layoutX="273.0" layoutY="358.0" prefWidth="150.0" />
+        <DatePicker fx:id="start_date" layoutX="261.0" layoutY="494.0" />
+        <DatePicker fx:id="end_date" disable="true" layoutX="667.0" layoutY="494.0" />
+        <Spinner fx:id="start_time_hour" layoutX="261.0" layoutY="540.0" prefHeight="25.0" prefWidth="81.0" />
+        <Spinner fx:id="start_time_minute" layoutX="354.0" layoutY="540.0" prefHeight="25.0" prefWidth="81.0" />
+        <Spinner fx:id="end_time_hour" layoutX="667.0" layoutY="540.0" prefHeight="25.0" prefWidth="81.0" />
+        <Spinner fx:id="end_time_minute" layoutX="760.0" layoutY="540.0" prefHeight="25.0" prefWidth="81.0" />
+        <Button fx:id="save" layoutX="273.0" layoutY="618.0" mnemonicParsing="false" onAction="#click_modify_appointment" prefHeight="39.0" prefWidth="150.0" text="Save">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="cancel" layoutX="542.0" layoutY="618.0" mnemonicParsing="false" onAction="#click_cancel" prefHeight="39.0" prefWidth="150.0" text="Cancel">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

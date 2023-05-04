@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="432.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Modify_Customer_Controller">
+    <children>
+        <Label layoutX="81.0" layoutY="60.0" text="Customer ID">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="79.0" layoutY="102.0" text="Customer Name">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="140.0" text="Address">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="80.0" layoutY="180.0" text="Postal Code">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="79.0" layoutY="222.0" text="Phone Number">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="81.0" layoutY="267.0" text="Countries">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="id" disable="true" editable="false" layoutX="244.0" layoutY="61.0" />
+        <TextField fx:id="name" layoutX="244.0" layoutY="103.0" />
+        <TextField fx:id="address" layoutX="244.0" layoutY="141.0" />
+        <TextField fx:id="postal_code" layoutX="244.0" layoutY="181.0" />
+        <TextField fx:id="phone_number" layoutX="244.0" layoutY="223.0" />
+        <ChoiceBox fx:id="countries" layoutX="244.0" layoutY="268.0" prefWidth="150.0" />
+        <Label layoutX="465.0" layoutY="267.0" text="Divisions">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="divisions" layoutX="561.0" layoutY="268.0" prefWidth="150.0" />
+        <Button fx:id="save" layoutX="244.0" layoutY="355.0" mnemonicParsing="false" onAction="#click_modify_customer" prefHeight="39.0" prefWidth="150.0" text="Save">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="cancel" layoutX="461.0" layoutY="355.0" mnemonicParsing="false" onAction="#click_cancel" prefHeight="39.0" prefWidth="150.0" text="Cancel">
+            <font>
+                <Font size="18.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
